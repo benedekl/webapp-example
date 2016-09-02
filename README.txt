@@ -41,3 +41,17 @@ $ python manage.py migrate
 
 $ python manage.py shell
 $ python manage.py dbshell
+
+
+-------------------------------------------------
+ Teszt szerver indítása:
+-------------------------------------------------
+
+$ python manage.py runserver
+
+
+-------------------------------------------------
+ Admin user felvétele:
+-------------------------------------------------
+
+$ python manage.py createsuperuser
