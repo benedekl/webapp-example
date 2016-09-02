@@ -19,3 +19,12 @@ $ . venv/bin/activate
 $ django-admin.py startproject mysite
 $ cd mysite
 $ python manage.py startapp myapp
+
+-------------------------------------------------
+ Migrációs feladatok:
+-------------------------------------------------
+- db migrációk készítése
+$ python manage.py makemigrations
+
+- db migrációk futtatása
+$ python manage.py migrate
