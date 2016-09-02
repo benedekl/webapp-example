@@ -5,4 +5,4 @@ class Book(models.Model):
     rating = models.DecimalField(max_digits=5, decimal_places=2)
 
     def __str__(self):
-        return "{t} (r)".format(t=self.title, r=self.rating)
+        return "{t} ({r})".format(t=self.title, r=self.rating)
