@@ -4,7 +4,7 @@ set -e
 set -u
 
 # függőségek a rendszeren:
-# apt-get install python3 python3-pip python3-venv
+# apt-get install python3 python3-pip python3-venv nodejs-legacy npm
 
 VENV_NAME=venv
 

@@ -55,3 +55,12 @@ $ python manage.py runserver
 -------------------------------------------------
 
 $ python manage.py createsuperuser
+
+
+-------------------------------------------------
+ DoneJs keretrendszer telepítése:
+-------------------------------------------------
+
+$ npm install donejs
+$ node_modules/donejs/bin/donejs add app webapp-example
+$ npm update   <- csomagok frissítése

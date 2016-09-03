@@ -1,0 +1,14 @@
+{
+  "sites": {
+    "docs": {
+      "dest": "docs",
+      "parent": "webapp-example",
+      "pageConfig": {
+        "page": "docs"
+      },
+      "glob": {
+        "pattern": "webapp/**/*.{js,md}"
+      }
+    }
+  }
+}
