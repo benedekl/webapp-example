@@ -1,5 +1,7 @@
 from tastypie.resources import ModelResource
 from tastypie.constants import ALL
+from tastypie.authentication import BasicAuthentication
+from tastypie.authorization import DjangoAuthorization
 
 from myapp.models import Book
 
@@ -10,6 +12,7 @@ class BookResource(ModelResource):
         queryset = Book.objects.all()
         resource_name = 'book'
         filtering = {'title': ALL}
-        
+        authentication = BasicAuthentication()
+        authorization = DjangoAuthorization()
 
 api.register(BookResource())
