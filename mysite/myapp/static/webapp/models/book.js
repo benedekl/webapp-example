@@ -15,7 +15,8 @@ export const bookConnection = superMap({
   url: {
     resource: '/api/v1/book',
     getListData: "/api/v1/book/",
-    createData: "/api/v1/book/"
+    createData: "/api/v1/book/",
+    destroyData: "/api/v1/book/{id}/",
   },
   parseListProp: 'objects',
   idProp: 'id',
