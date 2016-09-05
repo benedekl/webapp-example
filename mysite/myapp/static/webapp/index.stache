@@ -8,6 +8,14 @@
 
     <h1>{{message}}</h1>
 
+    <can-import from="webapp/books/">
+        {{#if isPending}}
+            Loading...
+        {{else}}
+            <webapp-books/>
+        {{/if}}
+    </can-import>
+
     {{#switch env.NODE_ENV}}
       {{#case "production"}}
         <script src="{{joinBase 'node_modules/steal/steal.production.js'}}"  main="webapp-example/index.stache!done-autorender"></script>

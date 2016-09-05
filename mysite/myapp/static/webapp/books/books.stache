@@ -1,0 +1,29 @@
+<can-import from="webapp/models/book" />
+
+<book-model get-list="{}" class="list-group">
+  {{#each ./value}}
+    <div class="list-group-item">
+      <h4 class="list-group-item-heading">{{title}}</h4>
+      <p class="list-group-item-text">{{rating}}</p>
+      <p class="action"><a href="javascript://" ($click)="destroy()">Delete</a></p>
+    </div>
+  {{else}}
+    <div class="list-group-item">
+      <h4 class="list-group-item-heading">No books</h4>
+    </div>
+  {{/each}}
+</book-model>
+
+<form class="row" ($submit)="send(%event)">
+  <div class="col-sm-3">
+    <input type="text" class="form-control" placeholder="Title"
+           {($value)}="title"/>
+  </div>
+  <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Rating"
+           {($value)}="rating"/>
+  </div>
+  <div class="col-sm-3">
+    <input type="submit" class="btn btn-primary btn-block" value="Send"/>
+  </div>
+</form>

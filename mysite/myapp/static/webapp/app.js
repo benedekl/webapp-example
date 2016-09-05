@@ -6,14 +6,16 @@ import 'can/route/pushstate/';
 const AppViewModel = Map.extend({
   define: {
     message: {
-      value: 'Hello World!',
+      value: 'Books',
       serialize: false
     },
     title: {
       value: 'webapp-example',
       serialize: false
-    }
+    },
   }
 });
+
+route('/:page', { page: 'book' });
 
 export default AppViewModel;
