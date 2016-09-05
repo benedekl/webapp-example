@@ -14,5 +14,6 @@ class BookResource(ModelResource):
         filtering = {'title': ALL}
         authentication = BasicAuthentication()
         authorization = DjangoAuthorization()
+        always_return_data = True
 
 api.register(BookResource())
